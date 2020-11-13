@@ -1,0 +1,28 @@
+{
+	"processors": [
+		"stylelint-processor-styled-components"
+	],
+	"extends": [
+		"stylelint-config-standard",
+		"stylelint-config-primer",
+		"stylelint-config-styled-components"
+	],
+	"plugins": [],
+	"rules": {
+		"indentation": 2,
+		"max-nesting-depth": null,
+		"order/properties-order": [],
+		"order/properties-alphabetical-order": true,
+		"selector-max-type": [
+			0,
+			{
+				"ignore": [
+					"child",
+					"compounded",
+					"descendant",
+					"next-sibling"
+				]
+			}
+		],
+	}
+}
