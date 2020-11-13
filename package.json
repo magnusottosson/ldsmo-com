@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@emotion/babel-plugin": "^11.0.0",
+    "@emotion/core": "^10.1.1",
     "@emotion/react": "^11.0.0",
     "gatsby": "^2.25.3",
     "gatsby-plugin-emotion": "^4.4.0",
@@ -26,8 +27,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "ress": "^3.0.0",
-    "styled-system": "^5.1.5",
-    "stylelint-config-primer": "^9.3.0"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.0.0",
@@ -44,6 +44,7 @@
     "prettier": "2.1.2",
     "standard": "^16.0.2",
     "stylelint": "^10.1.0",
+    "stylelint-config-primer": "^9.3.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
