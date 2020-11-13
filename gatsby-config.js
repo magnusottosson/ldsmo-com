@@ -11,7 +11,7 @@ module.exports = {
         removeReactHelmetAttrs: true,
         noInlineStyles: false,
         removeGatsbyAnnouncer: true,
-        removeFocusWrapper: true,
+        removeFocusWrapper: false,
         removePreloadLinks: false,
       },
     },
