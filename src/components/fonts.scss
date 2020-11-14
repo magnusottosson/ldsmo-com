@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("~inter-ui/Inter (web latin)/Inter-Thin.woff2") format("woff2"),
+         url("~inter-ui/Inter (web latin)/Inter-Thin.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("~inter-ui/Inter (web latin)/Inter-Medium.woff2") format("woff2"),
+         url("~inter-ui/Inter (web latin)/Inter-Medium.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("~inter-ui/Inter (web latin)/Inter-Bold.woff2") format("woff2"),
+         url("~inter-ui/Inter (web latin)/Inter-Bold.woff") format("woff");
+  }

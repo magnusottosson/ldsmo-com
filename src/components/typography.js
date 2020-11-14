@@ -5,7 +5,7 @@ export const H1 = ({ children }) => (
     css={css`
       color: #fff;
       font-size: 81px;
-      font-weight: 740;
+      font-weight: 700;
       letter-spacing: -0.055em;
       line-height: 1em;
       text-indent: -0.03em;

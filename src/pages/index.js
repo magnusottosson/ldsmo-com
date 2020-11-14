@@ -6,7 +6,7 @@ import Box from "../components/box"
 import Link from "../components/link"
 
 import "ress"
-import "inter-ui"
+import "../components/fonts.scss"
 
 const contacts = [
   {
@@ -38,12 +38,6 @@ export default () => (
           letter-spacing: -0.004em;
           line-height: 1.5em;
           scroll-behavior: smooth;
-        }
-
-        @supports (font-variation-settings: normal) {
-          body {
-            font-family: "Inter var", sans-serif;
-          }
         }
       `}
     />
