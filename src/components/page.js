@@ -5,8 +5,9 @@ import { css, jsx, Global } from '@emotion/react'
 
 export default ({ 
     children,
+    description,
+    keywords,
     title,
-    meta
 }) => (
     <>
       <Global
@@ -25,12 +26,12 @@ export default ({
           }
         `}
       />
-      <Helmet
-        meta={meta}
-        title={title}
-      >
+      <Helmet>
         <html lang="en" />
         <meta charSet="utf-8" />
+        {title && (<title>{title}</title>)}
+        {description && (<meta name="description" content={description} />)}
+        {keywords && (<meta name="keywords" content={keywords} />)}
       </Helmet>
       <main
         css={css`

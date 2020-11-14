@@ -27,16 +27,8 @@ const contacts = [
 
 export default () => (
   <Page
-    meta={[
-      {
-        name: 'description',
-        content: 'LDSMO New Ventures.',
-      },
-      {
-        name: 'keywords',
-        content: 'ldsmo, new ventures, magnus ottosson, luca di stefano',
-      },
-    ]}
+    keywords="ldsmo, new ventures, magnus ottosson, luca di stefano"
+    description="LDSMO New Ventures."
     title="LDSMO New Ventures."
   >
     <Box mb={5}>
