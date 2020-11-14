@@ -51,7 +51,6 @@ export default () => (
       <meta charSet="utf-8" />
       <title>LDSMO New Ventures</title>
       <description>LDSMO New Ventures</description>
-      <link rel="canonical" href="http://ldsmo.com/" />
     </Helmet>
     <main
       css={css`
