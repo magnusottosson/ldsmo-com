@@ -1,25 +1,26 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { css, jsx, Global } from "@emotion/react"
-import { H1, H2, ExtraLight } from "../components/typography"
-import Box from "../components/box"
-import Link from "../components/link"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+/** @jsx jsx */
+import { css, jsx, Global } from '@emotion/react'
+import { H1, H2, ExtraLight } from '../components/typography'
+import Box from '../components/box'
+import Link from '../components/link'
 
-import "ress"
-import "../components/fonts.scss"
+import 'ress'
+import '../components/fonts.scss'
 
 const contacts = [
   {
-    firstName: "Luca",
-    lastName: "Di Stefano",
-    phone: "+46708556723",
-    email: "luca@ldsmo.com",
+    firstName: 'Luca',
+    lastName: 'Di Stefano',
+    phone: '+46708556723',
+    email: 'luca@ldsmo.com',
   },
   {
-    firstName: "Magnus",
-    lastName: "Ottosson",
-    phone: "+46733908060",
-    email: "magnus@ldsmo.com",
+    firstName: 'Magnus',
+    lastName: 'Ottosson',
+    phone: '+46733908060',
+    email: 'magnus@ldsmo.com',
   },
 ]
 
@@ -31,7 +32,7 @@ export default () => (
           background-color: #000;
           color: #fff;
           font: 15px/22px Inter, system-ui, sans-serif;
-          font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+          font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
           font-kerning: normal;
           font-variant-ligatures: contextual common-ligatures;
           font-weight: 300;
@@ -41,10 +42,21 @@ export default () => (
         }
       `}
     />
-    <Helmet>
+    <Helmet
+      meta={[
+        {
+          name: 'description',
+          content: 'LDSMO New Ventures.',
+        },
+        {
+          name: 'keywords',
+          content: 'ldsmo, new ventures, magnus ottosson, luca di stefano',
+        },
+      ]}
+      title="LDSMO New Ventures."
+    >
+      <html lang="en" />
       <meta charSet="utf-8" />
-      <title>LDSMO New Ventures</title>
-      <description>LDSMO New Ventures</description>
     </Helmet>
     <main
       css={css`
@@ -59,8 +71,11 @@ export default () => (
     >
       <Box mb={5}>
         <H1>
-          LDSMO <ExtraLight>New Ventures</ExtraLight>.
-        </H1>
+          LDSMO
+{' '}
+<ExtraLight>New Ventures</ExtraLight>
+.
+</H1>
       </Box>
       <section
         css={css`
@@ -70,19 +85,31 @@ export default () => (
           justify-content: left;
         `}
       >
-        {contacts.map(({ firstName, lastName, phone, email }, index) => (
+        {contacts.map(({
+          firstName, lastName, phone, email,
+        }, index) => (
           <React.Fragment key={index}>
-            <Box my={2} minWidth={(1, 250)}>
+            <Box
+minWidth={(1, 250)}
+my={2}>
               <Box>
                 <H2>
-                  {firstName} <ExtraLight>{lastName}</ExtraLight>
+                  {firstName}
+{' '}
+<ExtraLight>
+{lastName}
+</ExtraLight>
                 </H2>
               </Box>
               <Box mt={3}>
-                <Link href={`mailto:${email}`}>{email}</Link>
+                <Link href={`mailto:${email}`}>
+{email}
+</Link>
               </Box>
               <Box mt={2}>
-                <Link href={`tel:${phone}`}>{phone}</Link>
+                <Link href={`tel:${phone}`}>
+{phone}
+</Link>
               </Box>
             </Box>
           </React.Fragment>
