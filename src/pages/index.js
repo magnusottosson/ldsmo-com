@@ -34,38 +34,5 @@ export default () => (
     <Box mb={5}>
       <H1>LDSMO <ExtraLight>New Ventures</ExtraLight>.</H1>
     </Box>
-    <section
-      css={css`
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: left;
-      `}
-    >
-      {contacts.map(({
-        firstName, lastName, phone, email,
-      }, index) => (
-        <React.Fragment key={index}>
-          <Box
-            minWidth={(1, 250)}
-            my={2}
-          >
-            <Box>
-              <H2>{firstName} <ExtraLight>{lastName}</ExtraLight></H2>
-            </Box>
-            <Box mt={3}>
-              <Link href={`mailto:${email}`}>
-                {email}
-              </Link>
-            </Box>
-            <Box mt={2}>
-              <Link href={`tel:${phone}`}>
-                {phone}
-              </Link>
-            </Box>
-          </Box>
-        </React.Fragment>
-      ))}
-    </section>
   </Page>
 )
