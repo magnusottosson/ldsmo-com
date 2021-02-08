@@ -25,7 +25,7 @@ const contacts = [
   },
 ]
 
-export default () => (
+const missing = () => (
   <Page
     meta={[
       {
@@ -44,3 +44,5 @@ export default () => (
     </Box>
   </Page>
 )
+
+export default missing

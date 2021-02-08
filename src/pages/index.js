@@ -25,7 +25,7 @@ const contacts = [
   },
 ]
 
-export default () => (
+const index = () => (
   <Page
     keywords="ldsmo, new ventures, magnus ottosson, luca di stefano"
     description="LDSMO New Ventures."
@@ -36,3 +36,5 @@ export default () => (
     </Box>
   </Page>
 )
+
+export default index
